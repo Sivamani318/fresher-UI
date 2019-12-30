@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="formValidations.css" />
+<script src="formValidations.js"></script>
+
+</head>
+<body>
+<div class="log">
+<table border='1'>
+<table align='center' class="ltable"  border='0' width='90%' cellpadding='8' cellspacing='0'>
+<tr> <th width='5%'><b>ID</b></th><th width='10%'><b>Name</b></th><th width='20%'><b>Email</b></th><th width='10%'><b>Class</b></th><th width='10%'><b>Year</b></th><th width='10%'><b>City</b>
+</th><th width='15%'><b>Country</b></th> <th></th></tr>
+ </table> <div class="child">
+ <table align='center' class="ltable"  border='0' width='90%' cellpadding='8' cellspacing='0'>
+<tr >
+
+<td id="id" width='5%'></td>
+<td id="name" width='10%'></td>
+<td id="email"width='20%'></td> 
+<td id="clss" width='10%'></td>
+<td id="year" width='10%'></td>
+<td id="city" width='10%'></td>
+<td id="cunt" width='15%'></td>
+<td>
+<button type="submit" onclick="sedit()" id="save"  class="btn">Edit</button>
+<button type="submit" onclick="sdelete()" id="clear"  class="btn">Delete</button>
+</td>
+</tr>
+</table>
+</div>
+</table>
+<br/><br/>
+
+
+  <div class="container">
+    
+	
+     <table align='center' class="rtable"  border='0' width='40%' cellpadding='8' cellspacing='0'>
+	 <tr><td><b>student id</b></td>
+	 <td><input type="number"  id="sid" value=""  ></td></tr>
+	 <tr><td><b>sudent name</b></td>
+	 <td><input type="text"  id="sname" value="" > </td></tr>
+	 <tr>
+     <td><label for="email"><b>Email</b></label></td>
+    <td><input type="email"  id="semail" value=""   > 
+    </td></tr>
+	<tr><td>
+    <label for="clss"><b>class</b></label></td><td>
+    <input type="text" id="sclss"  value=""   >
+   </tr></td>
+	
+	 <tr><td><b>Enrollment year</b></td>
+	 <td><input type="number"  id="syear" value=""   ></td></tr>
+   <tr><td>
+    <label for="city"><b>City</b></label></td><td>
+    <input type="text" id="scity"  value=""   >
+	</tr></td>
+	<tr><td>
+    <label for="country"><b>country</b></label></td><td>
+    <input type="text" id="scunt"  value=""   >
+	</tr></td>
+	</table>
+	</div>
+	<br/>
+	<div align="center">
+    <button type="submit" onclick="sinput()" id="save"  class="btn">Save</button>
+	<button type="submit" onclick="sclear()" id="clear"  class="btn">clear</button>
+	<button type="submit" onclick="home()"class="btn">goto home</button>
+	</div>
+ 
+  
+ </div>
+
+
+</body>
+
+<html>

@@ -1,0 +1,55 @@
+
+
+<html>
+<head>
+<title> registration  </title>
+<link rel="stylesheet" type="text/css" href="formValidations.css" />
+<script src="formValidations.js"></script>
+</head>
+
+<body>
+<form class="rform" class="rform">
+  <div class="container">
+    <h1 align="center">Register</h1>
+	<div >
+     <table align='center' class="rtable"  border='0' width='50%' cellpadding='8' cellspacing='0'>
+	 <tr><td><b>Firstname</b></td>
+	 <td><input type="text"  id="fname" value="" pattern="[a-zA-Z]+" required></td>
+	 <tr><td><b>Middlename</b></td>
+	 <td><input type="text"  name="mname" value=""  pattern="[a-zA-Z]+" > </td>
+	 <tr><td><b>Lastname</b></td>
+	 <td><input type="text"  name="lname" value=""   pattern="[a-zA-Z]+" required></td>
+	 <tr><td><b>MobileNumber</b></td>
+	 <td><input type="text"  name="mobile" value="" pattern="[789][0-9]{9}" required></td>
+	 <tr>
+     <td><label for="email"><b>Email</b></label></td>
+    <td><input type="email"  name="email" value=""  required > 
+    </tr></td>
+	<tr><td>
+    <label for="psw"><b>Password</b></label></td><td>
+    <input type="password" id="pass" name="psw" value="" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" required>
+	</td>
+	<td>
+	<ul><i>
+	<li>Password should contain uppercase and lowercase letters.</li>
+	<li>Password should contain letters and numbers and numbers</li>
+	<li>Minimum length of the password (the default value is 6).</li>
+	</i></ul>
+	</td>
+   </tr>
+   <tr><td>
+    <label for="psw-repeat"><b>Conform Password</b></label></td><td>
+    <input type="password" id="cpass" name="psw-repeat" value="" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" required>
+	</tr></td>
+	</table>
+	</div>
+	<br/>
+	<div align="center">
+    <button type="submit" onclick="pswd()" id="remail"  class="btn">Register</button>
+	</div>
+  </div>
+  
+ 
+</form>
+</body>
+</html>
